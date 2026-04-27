@@ -11,7 +11,6 @@ body{
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -28,8 +27,9 @@ body{
 
 .container-galeria{
     margin-top: 15px;
-    display: column;
-    column-count: 5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 15px;
 }
 
 .foto{
