@@ -1,7 +1,7 @@
 'use strict'
 
 const btnBuscar = document.getElementById('buscar')
-const inputRaca = document.getElementById('raca')
+const select = document.getElementById('racas')
 
 const getUrlFotos = async (raca) => {
     const url = `https://dog.ceo/api/breed/${raca}/images`
@@ -13,7 +13,7 @@ const getUrlFotos = async (raca) => {
 
 const preencherGaleria = async () => {
     const galeria = document.getElementById('container-galeria')
-    const urlFotos = await getUrlFotos(inputRaca.value)
+    const urlFotos = await getUrlFotos(select.value)
     const fotos = urlFotos.message.map(criarFoto)
 
     galeria.replaceChildren(...fotos)

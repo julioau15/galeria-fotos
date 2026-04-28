@@ -20,6 +20,12 @@ body{
     text-align: center;
 }
 
+#racas{
+    width: 200px;
+    height: 30px;
+    text-align: center; 
+}
+
 #buscar{
     padding: 5.5px 15px;
 }
